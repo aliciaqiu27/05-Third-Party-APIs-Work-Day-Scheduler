@@ -30,7 +30,7 @@
 
       // time-block.each()
       $(".time-block").each(function(){
-         var timeBlockHour = this.id;
+         var timeBlockHour = $(this).attr("id");
          console.log(timeBlockHour);
          if (timeBlockHour < currentTimeId){
            $(this).find('textarea').addClass('past');
